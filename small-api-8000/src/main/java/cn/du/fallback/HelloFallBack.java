@@ -1,6 +1,6 @@
 package cn.du.fallback;
 
-import cn.du.service.HellowService;
+import cn.du.api.HellowApi;
 import feign.hystrix.FallbackFactory;
 import org.springframework.stereotype.Component;
 
@@ -11,10 +11,10 @@ import org.springframework.stereotype.Component;
  * @Date 2018/9/23 9:38
  **/
 @Component
-public class HelloFallBack implements FallbackFactory<HellowService> {
+public class HelloFallBack implements FallbackFactory<HellowApi> {
     @Override
-    public HellowService create(Throwable throwable) {
-        return new HellowService() {
+    public HellowApi create(Throwable throwable) {
+        return new HellowApi() {
             @Override
             public String hello() {
                 return "no-hello";

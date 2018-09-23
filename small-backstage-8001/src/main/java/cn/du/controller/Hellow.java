@@ -1,6 +1,6 @@
 package cn.du.controller;
 
-import cn.du.service.HellowService;
+import cn.du.api.HellowApi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Hellow {
 
     @Autowired
-    private HellowService service;
+    private HellowApi service;
 
     @RequestMapping("/hello")
     public String hello(){
