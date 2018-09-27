@@ -1,9 +1,9 @@
-package cn.du.api.base.impl;
+package cn.du.service.impl;
 
 
 import cn.du.dto.PageResult;
 import cn.du.mapper.base.BaseMapper;
-import cn.du.api.base.BaseService;
+import cn.du.service.BaseService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;

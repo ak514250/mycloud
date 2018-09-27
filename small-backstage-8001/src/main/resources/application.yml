@@ -1,12 +1,16 @@
 server:
   port: 8001
 
-#配置日志
+##配置日志
+                #logging:
+                #  #配置日志文件路径
+                #  file: log
+                #  level:
+                #    root: debug
+
+
 logging:
-  #配置日志文件路径
-  path: G:\Project\mycloud\small-backstage-8001\log
-  level:
-    root: debug
+  config: classpath:logback-spring.xml
 
 eureka:
   client:
@@ -48,3 +52,4 @@ feign:
         isolation:
           thread:
             timeoutInMilliseconds: 2000
+

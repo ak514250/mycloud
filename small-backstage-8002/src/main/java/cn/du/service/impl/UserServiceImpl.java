@@ -1,6 +1,5 @@
 package cn.du.service.impl;
 
-import cn.du.api.base.impl.BaseServiceImpl;
 import cn.du.po.TbUser;
 import cn.du.po.TbUserExample;
 import cn.du.service.UserService;
